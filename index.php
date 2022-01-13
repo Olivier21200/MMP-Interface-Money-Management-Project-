@@ -319,7 +319,7 @@
                 <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
               </div>
             </div>
-
+<!--
             <div class="border-head">
               <h3 class='text-green'>Compt n°2</h3>
             </div>
@@ -362,7 +362,7 @@
                 <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
               </div>
              
-            </div>
+            </div>-->
             
             <!--custom chart end-->
             <div class="row mt">
@@ -441,7 +441,7 @@
                 </div>
               </div>
               <!-- /col-md-4 -->
-            </div>    
+            </div>    --
           
           </div>
           <!-- /col-lg-9 END SECTION MIDDLE -->
