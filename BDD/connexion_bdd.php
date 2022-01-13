@@ -2,9 +2,9 @@
 
  //Variable de link avec la bdd
  $host = 'localhost';
- $dbname = 'olivi1712794';
- $username = 'olivi1712794';
- $password = 'dltrbpjd8s';
+ $dbname = 'grp-385_s3_progweb';
+ $username = 'grp-385';
+ $password = 'LcCEnEEy';
  
 
  try //test de conection a la bdd
