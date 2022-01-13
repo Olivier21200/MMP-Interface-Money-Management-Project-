@@ -2,7 +2,7 @@
 
  //Variable de link avec la bdd
  $host = 'localhost';
- $dbname = 'mmp-interface';
+ $dbname = 'olivi1712794';
  $username = 'root';
  $password = '';
  $port = '3308';
