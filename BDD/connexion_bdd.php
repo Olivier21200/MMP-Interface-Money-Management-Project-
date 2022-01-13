@@ -2,9 +2,10 @@
 
  //Variable de link avec la bdd
  $host = 'localhost';
- $dbname = 'grp-385_s3_progweb';
- $username = 'grp-385';
- $password = 'LcCEnEEy';
+ $dbname = 'mmp-interface';
+ $username = 'root';
+ $password = '';
+ $port = 3308;
  
 
  try //test de conection a la bdd
