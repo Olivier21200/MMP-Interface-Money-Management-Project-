@@ -864,8 +864,8 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .custom-bar-chart .bar .value {
     position: absolute;
     bottom: 0;
-    background: #4ECDC4;
-    color: #4ECDC4;
+    background: #0ea02c;
+    color: #0ea02c;
     width: 100%;
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
@@ -3483,4 +3483,9 @@ ul.chat-available-user li a:hover {
 
 #copyrights a {
   color: #fff;
+}
+
+.text-green
+{
+    color:darkgreen;
 }
