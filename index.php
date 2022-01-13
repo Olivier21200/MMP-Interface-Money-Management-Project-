@@ -318,7 +318,7 @@
                 <div class="title">Dimanche</div>
                 <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
               </div>
-            </div>
+            </div><?php include('BDD/connexion_bdd.php'); ?>
 <!--    
             <div class="border-head">
               <h3 class='text-green'>Compt n°2</h3>
