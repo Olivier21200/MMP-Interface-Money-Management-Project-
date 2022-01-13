@@ -5,6 +5,7 @@
  $dbname = 'mmp-interface';
  $username = 'root';
  $password = '';
+ $port = '3308';
 
  try //test de conection a la bdd
  {
