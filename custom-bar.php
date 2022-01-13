@@ -1,12 +1,12 @@
 <?php 
 require_once('BDD/connexion_bdd.php');
 
-$sold_Moyenne_Semaine=300;
-$span1 = $sold_Moyenne_Semaine/5;
+$sold_Max_Semaine=300;
+$span1 = $sold_Max_Semaine/5;
 $span2 = $span1*2; 
 $span3 = $span1*3;
 $span4 = $span1*4;
-$span5 = $sold_Moyenne_Semaine;
+$span5 = $sold_Max_Semaine;
 
 
 echo('
