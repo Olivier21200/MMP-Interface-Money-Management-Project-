@@ -3,9 +3,9 @@
  //Variable de link avec la bdd
  $host = 'localhost';
  $dbname = 'olivi1712794';
- $username = 'root';
- $password = '';
- $port = '3308';
+ $username = 'olivi1712794';
+ $password = 'dltrbpjd8s';
+ 
 
  try //test de conection a la bdd
  {
