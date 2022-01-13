@@ -1,11 +1,14 @@
 <?php 
+require_once('BDD/connexion_bdd.php');
 
-$sold_Moyenne_Semaine;
+$sold_Moyenne_Semaine=300;
+$span5 = $sold_Moyenne_Semaine%5;
+echo $span5;
 echo('
 
     <div class="custom-bar-chart">
         <ul class="y-axis">
-            <li><span>10.000</span></li>
+            <li><span>'.$span5.'</span></li>
             <li><span>8.000</span></li>
             <li><span>6.000</span></li>
             <li><span>4.000</span></li>
