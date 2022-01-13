@@ -281,7 +281,7 @@
             <div class="border-head">
               <h3 class='text-green'>Compt n°1</h3>
             </div>
-            <div class="custom-bar-chart">
+            <!--<div class="custom-bar-chart">
               <ul class="y-axis">
                 <li><span>10.000</span></li>
                 <li><span>8.000</span></li>
@@ -318,7 +318,8 @@
                 <div class="title">Dimanche</div>
                 <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
               </div>
-            </div><?php include('BDD/connexion_bdd.php'); ?>
+            </div>-->
+            <?php include('custom-bar.php'); include('BDD/connexion_bdd.php'); ?>
 <!--    
             <div class="border-head">
               <h3 class='text-green'>Compt n°2</h3>
