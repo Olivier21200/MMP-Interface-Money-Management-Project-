@@ -35,46 +35,46 @@ class compts
         $this->_id = $id;
     }
 
-    //Setter de l'id du compts
-     public function set_id($id) 
+    //Setter d du cou proprietaire du compts
+     public function set_proprietaire($proprietaire) 
      {
-         $this->_id = $id;
+         $this->_proprietaire = $proprietaire;
      }
 
-    //Setter de l'id du compts
-    public function set_id($id) 
+    //Setter du typeCompt du compts
+    public function set_typeCompt($typeCompt) 
     {
-        $this->_id = $id;
+        $this->_typeCompt = $typeCompt;
     }
 
-    //Setter de l'id du compts
-     public function set_id($id) 
+    //Setter du plafond du compts
+     public function set_plafond($plafond) 
      {
-         $this->_id = $id;
+         $this->_plafond = $plafond;
      }
 
-    //Setter de l'id du compts
-    public function set_id($id) 
+    //Setter des interet du compts
+    public function set_interet($interet) 
     {
-        $this->_id = $id;
+        $this->_interet = $interet;
     }
 
-    //Setter de l'id du compts
-     public function set_id($id) 
+    //Setter des soldes du compts
+     public function set_solde($solde) 
      {
-         $this->_id = $id;
+         $this->_solde = $solde;
      }
 
-    //Setter de l'id du compts
-    public function set_id($id) 
+    //Setter de la dateOuverture du compts
+    public function set_dateOuverture($dateOuverture) 
     {
-        $this->_id = $id;
+        $this->_dateOuverture = $dateOuverture;
     }
 
-    //Setter de l'id du compts
-     public function set_id($id) 
+    //Setter de la dateFermeture du compts
+     public function set_dateFermeture($dateFermeture) 
      {
-         $this->_id = $id;
+         $this->_dateFermeture = $dateFermeture;
      }
 }
 
