@@ -9,7 +9,7 @@ class actionCompt
     private $_montant;
 
     //Constructeur de la class actionCompt
-    public function __construct($id, $compt, $user, $montant)
+    public function __construct($id=null, $compt=null, $user=null, $montant=100)
     {
         $this->_id = $id;
         $this->_compt = $compt;
