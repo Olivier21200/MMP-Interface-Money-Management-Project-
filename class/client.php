@@ -108,8 +108,6 @@ class client
     {
         $this->_nbCompts = $nbCompts;
     }
-    
-    
 
     //                          //
     //  GETTER DES ATTRIBUTS    // 
