@@ -17,7 +17,7 @@ class client
     private $_nbCompts;
 
     //Constructeur du client
-    public function __construct($id=null, $prenom=null, $nom=null, $age=null, $sexe=null, $telephone=null, $rue=null, $ville=null, $codePostal=null, $mail=null, $metier=null, $nbCompts=null)
+    public function __construct($id=null, $prenom=null, $nom=null, $age=18, $sexe='M', $telephone=null, $rue=null, $ville=null, $codePostal=null, $mail=null, $metier=null, $nbCompts=0)
     {
         $this->_id = $id;
         $this->_prenom = $prenom;
