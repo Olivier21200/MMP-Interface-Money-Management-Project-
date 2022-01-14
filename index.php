@@ -176,10 +176,10 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="img/olivier_sirugue.png" class="img-circle" width="100"></a></p>
+          <p class="centered"><a href="index.php"><img src="img/ny.jpg" class="img-circle" width="100"></a></p>
           <h5 class="centered">Olivier Sirugue</h5>
           <li class="mt">
-            <a class="active" href="index.html">
+            <a class="active" href="index.php">
               <i class="fa fa-dashboard"></i>
               <span>Dashboard</span>
               </a>
