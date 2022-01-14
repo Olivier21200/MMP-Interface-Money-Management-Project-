@@ -185,6 +185,31 @@ class client
     public function  nbCompts() 
     {
         return $this->_nbCompts;
-    }  
+    }
+    
+    //Initialisation d’une instance à partir d’un tableau
+    public function hydrate(array $donnees)
+    {
+        foreach ($donnees as $key => $value)
+        {
+            // On récupère le nom du setter correspondant à l'attribut.
+            $method = 'set_'.ucfirst($key);
+            
+            // Si le setter correspondant existe.
+            if (method_exists($this, $method))
+            {
+                // On appelle le setter.
+                $this->$method($value);
+            }
+        }
+    }
+
+     //ToString de la class client
+     public function __toString() 
+     {
+         $result = $this->id().' '.$this->prenom().' '.$this->nom().' '.$this->age().' '.$this->sexe().' '.$this->telephone().' '.$this->rue().' '.$this->ville().' '.$this->codePostal().' '.$this->mail().' '.$this->metier().' '.$this->nbCompts();
+         return $result;
+     }
+
 }
 ?>
