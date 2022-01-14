@@ -128,6 +128,30 @@ class compts
      {
          $this->_dateFermeture = $dateFermeture;
      }
+
+    //Initialisation d’une instance à partir d’un tableau
+    public function hydrate(array $donnees)
+    {
+        foreach ($donnees as $key => $value)
+        {
+            // On récupère le nom du setter correspondant à l'attribut.
+            $method = 'set_'.ucfirst($key);
+            
+            // Si le setter correspondant existe.
+            if (method_exists($this, $method))
+            {
+                // On appelle le setter.
+                $this->$method($value);
+            }
+        }
+    }
+
+    //ToString de la class compts
+    public function __toString() 
+    {
+        $result = $this->id().' '.$this->proprietaire().' '.$this->typeCompt().' '.$this->plafond().' '.$this->interet().' '.$this->solde().' '.$this->dateOuverture().' '.$this->dateFermeture();
+        return $result;
+    }
 }
 
 ?>
