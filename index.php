@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body >
   <section id="container">
     <!-- **********************************************************************************************************************************************************
         TOP BAR CONTENT & NOTIFICATIONS
@@ -37,9 +37,8 @@
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--logo start-->
-      <a href="index.html" class="logo"><b>DASH<span>IO</span></b></a>
+      <a href="index.php" class="logo"><span>M</span>oney <span>M</span>anagement <span>P</span>roject</a>
       <!--logo end-->
-
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
         <ul class="nav top-menu">
@@ -177,7 +176,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="profile.html"><img src="img/olivier_sirugue.png" class="img-circle" width="100"></a></p>
           <h5 class="centered">Olivier Sirugue</h5>
           <li class="mt">
             <a class="active" href="index.html">
@@ -281,9 +280,11 @@
             <div class="border-head">
               <h3 class='text-green'>Compt n°1</h3>
             </div>
-            
+           
             <?php include('custom-bar.php'); include('BDD/connexion_bdd.php'); ?>
-            
+           
+
+        
             
 <!--      
   
@@ -424,6 +425,7 @@
                 var doughnutData = [{
                     value: <?php echo $a=85 ;?>,
                     color: "#4ECDC4",
+                   
                     
                   },
                   {
