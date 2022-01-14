@@ -26,6 +26,16 @@ class compts
     }
 
     //                          //
+    //  GETTER DES ATTRIBUTS    // 
+    //                          //
+
+    //Getter de l'id du compts
+    public function  id() 
+    {
+        return $this->_id;
+    }
+
+    //                          //
     //  SETTER DES ATTRIBUTS    // 
     //                          //
 
