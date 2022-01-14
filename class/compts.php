@@ -13,7 +13,7 @@ class compts
     private $_dateFermeture;
 
     //Constructeur de la class compt
-    public function __construct($id=null, $proprietaire=null, $typeCompt=null, $plafond=null, $interet=null, $solde=null, $dateOuverture=null, $dateFermeture=null)
+    public function __construct($id=null, $proprietaire=null, $typeCompt='A', $plafond=25000, $interet=1, $solde=0, $dateOuverture=null, $dateFermeture=null)
     {
         $this->_id = $id;
         $this->_proprietaire = $proprietaire;
