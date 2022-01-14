@@ -35,6 +35,48 @@ class compts
         return $this->_id;
     }
 
+    //Getter du proprietaire du compts
+     public function  proprietaire() 
+     {
+         return $this->_proprietaire;
+     }
+
+    //Getter du typeCompt du compts
+    public function  typeCompt() 
+    {
+        return $this->_typeCompt;
+    }
+
+    //Getter du plafond du compts
+     public function  plafond() 
+     {
+         return $this->_plafond;
+     }
+
+    //Getter des interets du compts
+    public function  interet() 
+    {
+        return $this->_interet;
+    }
+
+    //Getter des solde du compts
+     public function  solde() 
+     {
+         return $this->_solde;
+     }
+
+    //Getter de la dateOuverture du compts
+    public function  dateOuverture() 
+    {
+        return $this->_dateOuverture;
+    }
+    
+    //Getter de la dateFermeture du compts
+     public function  dateFermeture() 
+     {
+         return $this->_dateFermeture;
+     }
+
     //                          //
     //  SETTER DES ATTRIBUTS    // 
     //                          //
