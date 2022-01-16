@@ -17,10 +17,14 @@
     $soldSemaineManager = new soldSemaineManager($pdo);
   
 
-    $client1 = new Client(9,'Emma','girard',20,'F',0640052760,'8c rue du chateau','Beaune',21200,'emma123@gmail.com','etudiante',1);
-    $client1->__toString();
+    //$client1 = new Client(9,'Emma','girard',20,'F',0640052760,'8c rue du chateau','Beaune',21200,'emma123@gmail.com','etudiante',1);
+    //$client1->__toString();
 
-    echo $soldSemaineManager->get(1);    
+    $soldeSemaine1 = new soldSemaine(2,1,250,2003-11-11);
+    $soldSemaineManager->add($soldeSemaine1);
+    var_dump($soldeSemaine1);
+
+    //echo $soldSemaineManager->get(1);    
 
    
 ?>

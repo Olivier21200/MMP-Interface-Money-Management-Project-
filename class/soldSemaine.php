@@ -6,15 +6,15 @@ class soldSemaine
     private $_id;
     private $_comptID;
     private $_sold;
-    private $_dateSemaine;
+    private $_dateSemaineMoyenne;
 
     //Constructeur de la class soldSemaine
-    public function __construct($id=null, $comptID=null, $sold=null, $dateSemaine=null)
+    public function __construct($id=null, $comptID=null, $sold=null, $dateSemaineMoyenne=null)
     {
         $this->_id = $id;
         $this->_comptID = $comptID;
         $this->_sold = $sold;
-        $this->_dateSemaine = $dateSemaine;
+        $this->_dateSemaineMoyenne = $dateSemaineMoyenne;
     }
 
     //                          //
@@ -39,10 +39,10 @@ class soldSemaine
         return $this->_sold;
     }
 
-    //Getter de la dateSemaine de la soldSemaine
-    public function dateSemaine() 
+    //Getter de la dateSemaineMoyenne de la soldSemaine
+    public function dateSemaineMoyenne() 
     {
-        return $this->_dateSemaine;
+        return $this->_dateSemaineMoyenne;
     }
 
     //                          //
@@ -67,10 +67,10 @@ class soldSemaine
         $this->_sold = $sold;
     }
 
-    //Setter de la dateSemaine de la soldSemaine
-    public function set_dateSemaine($dateSemaine) 
+    //Setter de la dateSemaineMoyenne de la soldSemaine
+    public function set_dateSemaineMoyenne($dateSemaineMoyenne) 
     {
-        $this->_dateSemaine = $dateSemaine;
+        $this->_dateSemaineMoyenne = $dateSemaineMoyenne;
     }
 
     //Initialisation d’une instance à partir d’un tableau
@@ -93,7 +93,7 @@ class soldSemaine
     //ToString de la class soldSemaine
     public function __toString() 
     {
-        $result = $this->id().' '.$this->comptID().' '.$this->sold().' '.$this->dateSemaine();
+        $result = $this->id().' '.$this->comptID().' '.$this->sold().' '.$this->dateSemaineMoyenne();
         return $result;
     }
 }
