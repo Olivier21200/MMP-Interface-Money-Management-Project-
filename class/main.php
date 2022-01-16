@@ -18,6 +18,9 @@
      echo $comptsManager->get(1);
      $compts2 = new compts(2,16,'A',2500,2,250,'2018-12-05');
      $comptsManager->add($compts2);
+
+     $res = $comptsManager->getList();
+     var_dump($res);
          //$clientManager->add($client1); 
      // $clientManager->remove(15);
      //$clientManager->remove(14);
