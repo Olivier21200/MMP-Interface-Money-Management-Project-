@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>MMP-Interface-Money-Management-Project</title>
+  <title>MMP-Interface-Money-Management-Project Clients</title>
 
   <!-- Favicons -->
   <link href="img/mmp.png" rel="icon">
