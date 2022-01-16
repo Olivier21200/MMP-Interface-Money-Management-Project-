@@ -1,10 +1,12 @@
 <?php 
 
-    require_once('../class-Manager/comptsManager.php');
-    include_once('../bdd/connexion_bdd.php');
+    
 
     function __clientListAffiche()
     {
+        require_once('../class-Manager/comptsManager.php');
+        include_once('../bdd/connexion_bdd.php');
+
         $clientManager = new ClientManager($pdo);
         $res2 = $clientManager->getList(); //lister l’ensemble des animaux
         echo('
