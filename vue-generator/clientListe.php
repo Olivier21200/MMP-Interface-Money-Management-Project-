@@ -1,5 +1,10 @@
 <?php 
 
+require_once('../class-Manager/comptsManager.php');
+
+
+$res2 = $manager->getList(); //lister l’ensemble des animaux
+
     function __clientListAffiche()
     {
         echo('
