@@ -20,7 +20,7 @@
      $comptsManager->add($compts2);
 
      $res = $comptsManager->getList();
-     
+     $comptsManager->update()
          //$clientManager->add($client1); 
      // $clientManager->remove(15);
      //$clientManager->remove(14);
