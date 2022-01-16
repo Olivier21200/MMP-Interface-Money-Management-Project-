@@ -2,6 +2,7 @@
     require_once('client.php');
     require_once('compts.php');
     require_once('../class-Manager/clientManager.php');
+    require_once('../class-Manager/comptsManager.php');
     
     include_once('../bdd/connexion_bdd.php');
 
