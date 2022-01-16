@@ -29,8 +29,7 @@ class actionComptManager
     {
         $_id = (int) $id; //on force le type de id en int pour la requete sql
 
-        // préparation de la requete de selection d'un animal à partir de son id
-        $request = $this->pdo()->prepare("SELECT * FROM actionCompt WHERE id=:id");
+        $request = $this->pdo()->prepare("SELECT * FROM actionCompt WHERE id=:id"); // préparation de la requete de selection d'une actionCompt à partir de son id
 
         $request->execute(array('id' => $_id)); //on execute la requete select en spécifiant la valeur d'id
 
