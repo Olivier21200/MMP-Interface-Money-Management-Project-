@@ -279,20 +279,27 @@
               <h3 class='text-green'>Compt n°1</h3>
             </div>
 
-      <section class="wrapper">
-        <h3><i class="fa fa-angle-right"></i> Advanced Table Example</h3>
-        <div class="row mb">
+        <h3><i class="fa fas fa-address-book"></i> Liste des compts client</h3>
+        
           <!-- page start-->
           <div class="content-panel">
             <div class="adv-table">
               <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
                 <thead>
                   <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th class="hidden-phone">Platform(s)</th>
-                    <th class="hidden-phone">Engine version</th>
-                    <th class="hidden-phone">CSS grade</th>
+                    
+                    <th class="hidden-phone">Id</th>
+                    <th class="hidden-phone">Prenom</th>
+                    <th class="hidden-phone">Nom</th>
+                    <th class="hidden-phone">Age</th>
+                    <th class="hidden-phone">Sexe</th>
+                    <th class="hidden-phone">Telephone</th>
+                    <th class="hidden-phone">Rue</th>
+                    <th class="hidden-phone">Ville</th>
+                    <th class="hidden-phone">codePostal</th>
+                    <th class="hidden-phone">Mail</th>
+                    <th class="hidden-phone">Metier</th>
+                    <th class="hidden-phone">nb_Compts</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -300,7 +307,14 @@
                     <td>Trident</td>
                     <td>Internet Explorer 4.0</td>
                     <td class="hidden-phone">Win 95+</td>
-                    <td class="center hidden-phone">4</td>
+                    <td class=" hidden-phone">4</td>
+                    <td class=" hidden-phone">X</td>
+                    <td class=" hidden-phone">X</td>
+                    <td class="center hidden-phone">X</td>
+                    <td class="center hidden-phone">X</td>
+                    <td class="center hidden-phone">X</td>
+                    <td class="center hidden-phone">X</td>
+                    <td class="center hidden-phone">X</td>
                     <td class="center hidden-phone">X</td>
                   </tr>
                  </tbody>
@@ -310,7 +324,7 @@
           <!-- page end-->
         </div>
         <!-- /row -->
-      </section>
+   
           </div>
 
           <!-- /col-lg-9 END SECTION MIDDLE -->
