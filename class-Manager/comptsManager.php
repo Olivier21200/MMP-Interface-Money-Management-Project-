@@ -92,6 +92,7 @@ class comptsManager
         $request->bindValue(':solde', $compts->solde(), PDO::PARAM_INT);
         $request->bindValue(':dateOuverture', $compts->dateOuverture(), PDO::PARAM_STR_CHAR);
         $request->bindValue(':dateFermeture', $compts->dateFermeture(), PDO::PARAM_STR_CHAR);
+        $request->bindValue(':id', $compts->id(), PDO::PARAM_INT);
 
         $request->execute(); //on exécute notre requete de mise a jour
     }
