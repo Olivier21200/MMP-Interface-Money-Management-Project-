@@ -2,7 +2,7 @@
 
 require_once("../class/compts.php");
 
-class clientManager 
+class comptsManager 
 {
     private $_pdo; // Instance de PDO.
 
@@ -42,6 +42,21 @@ class clientManager
          
          return $compts; //On return l'objet client créer précédament avec les données de notre requete
      }
+
+    //Fonction qui ajoute un compts à la bdd
+    public function add(compts $compts)
+    {
+        $request = $this->pdo()->prepare('INSERT INTO compts SET proprietaire = :proprietaire, typeCompt = :typeCompt, plafond = :plafond, interet = :interet, solde = :solde, dateOuverture = :dateOuverture, dateFermeture = :dateFermeture');
+        
+        $request->bindValue(':proprietaire', $compts->proprietaire(), PDO::PARAM_INT);
+        $request->bindValue(':typeCompt', $compts->typeCompt(), PDO::PARAM_STR_CHAR);
+        $request->bindValue(':plafond', $compts->plafond(), PDO::PARAM_INT);
+        $request->bindValue(':interet', $compts->interet(), PDO::PARAM_INT);
+        $request->bindValue(':solde', $compts->solde(), PDO::PARAM_INT);
+        $request->bindValue(':dateOuverture', $compts->dateOuverture(), PDO::PARAM_STR_CHAR);
+        $request->bindValue(':dateFermeture', $compts->dateFermeture(), PDO::PARAM_STR_CHAR);
+        $request->execute(); //On execute la requete d'ajout'
+    }
 }
 
 
