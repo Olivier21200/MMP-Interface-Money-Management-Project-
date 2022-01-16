@@ -55,8 +55,31 @@ class comptsManager
         $request->bindValue(':solde', $compts->solde(), PDO::PARAM_INT);
         $request->bindValue(':dateOuverture', $compts->dateOuverture(), PDO::PARAM_STR_CHAR);
         $request->bindValue(':dateFermeture', $compts->dateFermeture(), PDO::PARAM_STR_CHAR);
+
         $request->execute(); //On execute la requete d'ajout'
     }
+
+    //Fonction qui retourne la liste des compts dans notre bdd
+    public function getList()
+    {
+        $clients = array(); //Création d'un tableau 
+        
+        // préparation de la requete de selection de tout les animaux dnas la table animaux ordoner par leur id
+        $request = $this->pdo()->prepare('SELECT * FROM compts ORDER BY prenom, nom');
+        
+        $request->execute(); //execution de notre select *
+
+        //on parcours le résultat de notre requete et on créer des objets afin de les stocker dans un tableau
+        while ($donnees = $request->fetch(PDO::FETCH_ASSOC)) 
+        {
+            $client = new Client(); //création d'un objet animal
+            $client->hydrate($donnees); //Utilisation de ma fonction hydrate pour set les valeur de mon objet $A1
+            $clients[] = $client; //On stock notre objet dans notre tableau animaux
+           
+        }       
+        return $clients; //On return le tableau d'animaux créer précédament avec les données de notre requete
+    }
+
 }
 
 
