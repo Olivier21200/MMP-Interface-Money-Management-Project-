@@ -42,19 +42,6 @@ class soldSemaineManager
         return $soldSemaine; //On return l'objet soldSemaine créer précédament avec les données de notre requete
     }
 
-     //Fonction qui ajoute une soldSemaine à la bdd
-     public function add(soldSemaine $soldSemaine)
-     {
-         $request = $this->pdo()->prepare('INSERT INTO soldsemaine SET comptID = :comptID, sold = :sold, dateSemaineMoyenne = :dateSemaineMoyenne');
-         
-         $request->bindValue(':comptID', $soldSemaine->comptID(), PDO::PARAM_INT);
-         $request->bindValue(':sold', $soldSemaine->sold(), PDO::PARAM_INT);
-         $request->bindValue(':dateSemaineMoyenne', $soldSemaine->dateSemaineMoyenne(), PDO::PARAM_STR_CHAR);
-        
-         $request->execute(); //On execute la requete d'ajout'
-         var_dump($request);
-     }
-     
-
+   
 }
 ?>
