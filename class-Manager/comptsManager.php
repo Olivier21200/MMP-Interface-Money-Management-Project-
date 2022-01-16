@@ -109,6 +109,8 @@ class comptsManager
          $request->execute(); //on execute la requete select en spécifiant la valeur d'id
      }
 
+     
+
 }
 
 
