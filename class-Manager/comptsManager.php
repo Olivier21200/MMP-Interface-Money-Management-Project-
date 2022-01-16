@@ -80,6 +80,22 @@ class comptsManager
         return $Compts; //On return le tableau d'animaux créer précédament avec les données de notre requete
     }
 
+    //fonction qui update un compts sélectionner avec de nouvelle valeur
+    public function update(compts $compts) 
+    {
+        $request = $this->pdo()->prepare('UPDATE compts SET proprietaire = :proprietaire, typeCompt = :typeCompt, plafond = :plafond, interet = :interet, solde = :solde, dateOuverture = :dateOuverture, dateFermeture = :dateFermeture WHERE id = :id');
+
+        $request->bindValue(':proprietaire', $compts->proprietaire(), PDO::PARAM_INT);
+        $request->bindValue(':typeCompt', $compts->typeCompt(), PDO::PARAM_STR_CHAR);
+        $request->bindValue(':plafond', $compts->plafond(), PDO::PARAM_INT);
+        $request->bindValue(':interet', $compts->interet(), PDO::PARAM_INT);
+        $request->bindValue(':solde', $compts->solde(), PDO::PARAM_INT);
+        $request->bindValue(':dateOuverture', $compts->dateOuverture(), PDO::PARAM_STR_CHAR);
+        $request->bindValue(':dateFermeture', $compts->dateFermeture(), PDO::PARAM_STR_CHAR);
+
+        $request->execute(); //on exécute notre requete de mise a jour
+    }
+
 }
 
 
