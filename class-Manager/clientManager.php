@@ -110,7 +110,7 @@ class clientManager
     {
         $_id = (int) $id; //on force le type de id en int pour la requete sql
 
-        $request = $this->pdo()->prepare("delete FROM client WHERE id=:id"); // préparation de la requete de supretion d'un animal à partir de son id
+        $request = $this->pdo()->prepare("delete FROM client WHERE id=:id"); // préparation de la requete de supretion d'un compts à partir de son id
 
         $request->bindValue(':id', $_id, PDO::PARAM_INT);
 
