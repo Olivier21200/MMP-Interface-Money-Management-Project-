@@ -278,7 +278,7 @@
         <h3 class="text-green "><i class="fa fas fa-address-book"></i> Liste des compts client :</h3>
         
           <!-- page start-->
-          <?php include('../vue-generator/clientListe.php'); ?>
+          
           
         </div>
         </div> <!-- row end-->

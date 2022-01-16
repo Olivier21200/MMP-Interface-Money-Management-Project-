@@ -1,7 +1,7 @@
 <?php 
           
          require_once('../class-Manager/clientManager.php');
-         include('../bdd/connexion_bdd.php');
+         include_once('../bdd/connexion_bdd.php');
         
         $clientManager = new clientManager($pdo);
         $res2 = $clientManager->getList(); //lister l’ensemble des animaux
