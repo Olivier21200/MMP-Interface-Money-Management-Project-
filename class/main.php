@@ -15,12 +15,15 @@
      $client1 = new Client(9,'Emma','girard',20,'F',0640052760,'8c rue du chateau','Beaune',21200,'emma123@gmail.com','etudiante',1);
      $client1->__toString();
 
-     echo $comptsManager->get(1);
-     $compts2 = new compts(2,16,'A',2500,2,250,'2018-12-05');
-     $comptsManager->add($compts2);
+     //echo $comptsManager->get(1);
+    
+     //$comptsManager->add($compts2);
 
-     $res = $comptsManager->getList();
-     $comptsManager->update()
+    // $res = $comptsManager->getList();
+
+     $compts2 = new compts(1,16,'B',999,2,1000,'2019-12-05');
+
+     $comptsManager->update($compts2)
          //$clientManager->add($client1); 
      // $clientManager->remove(15);
      //$clientManager->remove(14);
