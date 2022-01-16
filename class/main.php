@@ -21,7 +21,7 @@
     //$client1->__toString();
 
     $soldeSemaine1 = new soldSemaine(2,1,250,2003-11-11);
-    $soldSemaineManager->add($soldeSemaine1);
+    //$soldSemaineManager->add($soldeSemaine1);
     var_dump($soldeSemaine1);
 
     //echo $soldSemaineManager->get(1);    
