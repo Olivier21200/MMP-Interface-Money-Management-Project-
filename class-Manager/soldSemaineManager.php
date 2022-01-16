@@ -29,7 +29,7 @@ class soldSemaineManager
     {
         $_id = (int) $id; //on force le type de id en int pour la requete sql
 
-        $request = $this->pdo()->prepare("SELECT * FROM actionCompt WHERE id=:id");  // préparation de la requete de selection d'une soldSemaine à partir de son id
+        $request = $this->pdo()->prepare("SELECT * FROM soldSemaine WHERE id=:id");  // préparation de la requete de selection d'une soldSemaine à partir de son id
 
         $request->execute(array('id' => $_id)); //on execute la requete select en spécifiant la valeur d'id
 
