@@ -185,7 +185,7 @@
           <li class="sub-menu">
             <a href="javascript:;">
               <i class="fa fa-desktop"></i>
-              <span>UI Elements</span>
+              <span>Clients</span>
               </a>
             <ul class="sub">
               <li><a href="general.html">General</a></li>
