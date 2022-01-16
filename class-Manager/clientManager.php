@@ -2,7 +2,7 @@
 
 require_once("../class/client.php");
 
-class clientManager 
+class  clientManager
 {
     private $_pdo; // Instance de PDO.
 

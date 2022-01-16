@@ -1,4 +1,4 @@
-<?php require_once('../vue-generator/clientList.php') ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,22 +18,20 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
   <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
-  <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css" />
+  <link href="lib/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+  <link href="lib/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+  <link rel="stylesheet" href="lib/advanced-datatable/css/DT_bootstrap.css" />
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet">
-  <script src="lib/chart-master/Chart.js"></script>
 
 </head>
 
-<body >
+<body>
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
+  
     <!--header start-->
-    <header class="header black-bg"> 
+    <header class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
@@ -169,7 +167,8 @@
       </div>
     </header>
     <!--header end-->
-    
+
+
     <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
@@ -270,84 +269,39 @@
     </aside>
     <!--sidebar end-->
 
+   
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-9 main-chart">
-            <!--CUSTOM CHART START -->
-            <div class="border-head">
-              <h3 class='text-green'>Compt n°1</h3>
-            </div>
-
-        <h3 class="text-green"><i class="fa fas fa-address-book"></i > Liste des compts client :</h3>
+        <h3 class="text-green "><i class="fa fas fa-address-book"></i> Liste des compts client :</h3>
         
           <!-- page start-->
-          <div class="content-panel">
-            <div class="adv-table">
-              <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
-                <thead>
-                  <tr>
-                    
-                    <th class="hidden-phone">Id</th>
-                    <th class="hidden-phone">Prenom</th>
-                    <th class="hidden-phone">Nom</th>
-                    <th class="hidden-phone">Age</th>
-                    <th class="hidden-phone">Sexe</th>
-                    <th class="hidden-phone">Telephone</th>
-                    <th class="hidden-phone">Rue</th>
-                    <th class="hidden-phone">Ville</th>
-                    <th class="hidden-phone">codePostal</th>
-                    <th class="hidden-phone">Mail</th>
-                    <th class="hidden-phone">Metier</th>
-                    <th class="hidden-phone">nb_Compts</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="gradeX">
-                    <td>Trident</td>
-                    <td>Internet Explorer 4.0</td>
-                    <td class="hidden-phone">Win 95+</td>
-                    <td class=" hidden-phone">4</td>
-                    <td class=" hidden-phone">X</td>
-                    <td class=" hidden-phone">X</td>
-                    <td class="center hidden-phone">X</td>
-                    <td class="center hidden-phone">X</td>
-                    <td class="center hidden-phone">X</td>
-                    <td class="center hidden-phone">X</td>
-                    <td class="center hidden-phone">X</td>
-                    <td class="center hidden-phone">X</td>
-                  </tr>
-                  
-                  
-                 </tbody>
-              </table>
-            </div>
-          </div>
+          <?php //include('../vue-generator/clientList.php');?>
+          
+        </div>
+        </div> <!-- row end-->
           <!-- page end-->
         </div>
         <!-- /row -->
-   
-          </div>
-
-          
-          <!-- /col-lg-3 -->
-        </div>
-        <!-- /row -->
       </section>
+      <!-- /wrapper -->
     </section>
+    <!-- /MAIN CONTENT -->
     <!--main content end-->
+
     <!--footer start-->
     <footer class="site-footer">
       <div class="text-center">
         <p>
-          &copy; Copyrights <strong>MMP</strong>. All Rights Reserved
+          &copy; Copyrights <strong>Dashio</strong>. All Rights Reserved
         </p>
         <div class="credits">
          
-          Created by Olivier Sirugue 
+          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
         </div>
-        <a href="index.php" class="go-top">
+        <a href="advanced_table.html#" class="go-top">
           <i class="fa fa-angle-up"></i>
           </a>
       </div>
@@ -356,86 +310,17 @@
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="lib/jquery/jquery.min.js"></script>
-
+  <script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
   <script src="lib/jquery.scrollTo.min.js"></script>
   <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
-  <script src="lib/jquery.sparkline.js"></script>
-  <script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.js"></script>
   <script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.dataTables.js"></script>
   <script type="text/javascript" src="lib/advanced-datatable/js/DT_bootstrap.js"></script>
   <!--common script for all pages-->
   <script src="lib/common-scripts.js"></script>
-  <script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
-  <script type="text/javascript" src="lib/gritter-conf.js"></script>
   <!--script for this page-->
-  <script src="lib/sparkline-chart.js"></script>
-  <script src="lib/zabuto_calendar.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
-      var unique_id = $.gritter.add({
-        // (string | mandatory) the heading of the notification
-        title: 'Bienvenue sur MMP',
-        // (string | mandatory) the text inside the notification
-        text: 'Une interface dynamique et moderne pour gérer vos comptes, vos achats et vos futurs investissements.',
-        // (string | optional) the image to display on the left
-        image: 'img/mmp.png',
-        // (bool | optional) if you want it to fade out on its own or just sit there
-        sticky: false,
-        // (int | optional) the time you want it to be alive for before fading out
-        time: 8000,
-        // (string | optional) the class name you want to apply to that specific message
-        class_name: 'my-sticky-class'
-      });
-
-      return false;
-    });
-  </script>
-  <script type="application/javascript">
-    $(document).ready(function() {
-      $("#date-popover").popover({
-        html: true,
-        trigger: "manual"
-      });
-      $("#date-popover").hide();
-      $("#date-popover").click(function(e) {
-        $(this).hide();
-      });
-
-      $("#my-calendar").zabuto_calendar({
-        action: function() {
-          return myDateFunction(this.id, false);
-        },
-        action_nav: function() {
-          return myNavFunction(this.id);
-        },
-        ajax: {
-          url: "show_data.php?action=1",
-          modal: true
-        },
-        legend: [{
-            type: "text",
-            label: "Special event",
-            badge: "00"
-          },
-          {
-            type: "block",
-            label: "Regular event",
-          }
-        ]
-      });
-    });
-
-    function myNavFunction(id) {
-      $("#date-popover").hide();
-      var nav = $("#" + id).data("navigation");
-      var to = $("#" + id).data("to");
-      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
-    }
-  </script>
-   <!--script for this page-->
-   <script type="text/javascript">
     /* Formating function for row details */
     function fnFormatDetails(oTable, nTr) {
       var aData = oTable.fnGetData(nTr);
@@ -457,18 +342,12 @@
       nCloneTd.innerHTML = '<img src="lib/advanced-datatable/images/details_open.png">';
       nCloneTd.className = "center";
 
-      $('#hidden-table-info thead tr').each(function() {
-        this.insertBefore(nCloneTh, this.childNodes[0]);
-      });
-
-      $('#hidden-table-info tbody tr').each(function() {
-        this.insertBefore(nCloneTd.cloneNode(true), this.childNodes[0]);
-      });
+     
 
       /*
        * Initialse DataTables, with no sorting on the 'details' column
        */
-      var oTable = $('#hidden-table-info').dataTable({
+       var oTable = $('#hidden-table-info').dataTable({
         "aoColumnDefs": [{
           "bSortable": false,
           "aTargets": [0]

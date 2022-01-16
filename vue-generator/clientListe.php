@@ -1,13 +1,9 @@
 <?php 
-
-    
-
-    function __clientListAffiche()
-    {
-        require_once('../class-Manager/comptsManager.php');
-        include_once('../bdd/connexion_bdd.php');
-
-        $clientManager = new ClientManager($pdo);
+          
+         require_once('../class-Manager/clientManager.php');
+         include('../bdd/connexion_bdd.php');
+        
+        $clientManager = new clientManager($pdo);
         $res2 = $clientManager->getList(); //lister l’ensemble des animaux
         echo('
 
@@ -48,7 +44,7 @@
                   <td>".$val->codePostal()."</td>
                   <td>".$val->mail()."</td>
                   <td>".$val->metier()."</td>
-                  <td>".$val->nb_compts()."</td>        
+                  <td>".$val->nbCompts()."</td>        
 
                   </tr> </tbody>");
               }
@@ -57,6 +53,8 @@
             </table>
           </div>
         </div>');
-    }
+    
+
+
 
 ?>
