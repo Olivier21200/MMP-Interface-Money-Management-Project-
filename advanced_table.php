@@ -280,7 +280,6 @@
         <?php require_once("../vue-generator/clientListe.php"); ?>
           <!-- page start-->
           
-          
         </div>
         </div> <!-- row end-->
           <!-- page end-->
