@@ -277,6 +277,7 @@
           <div class="col-lg-9 main-chart">
         <h3 class="text-green "><i class="fa fas fa-address-book"></i> Liste des compts client :</h3>
         
+        <?php require_once("../vue-generator/clientListe.php"); ?>
           <!-- page start-->
           
           
