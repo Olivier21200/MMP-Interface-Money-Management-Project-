@@ -33,7 +33,6 @@
                   echo("<tbody> <tr>
                    
                   <td>".$val->id()."</td>
-                  <td>".$val->id()."</td>
                   <td>".$val->prenom()."</td>
                   <td>".$val->nom()."</td>
                   <td>".$val->age()."</td> 

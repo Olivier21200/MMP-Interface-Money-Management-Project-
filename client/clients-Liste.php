@@ -1,4 +1,4 @@
-<?php require_once('../vue-generator/clientList.php') ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,19 +11,19 @@
   <title>MMP-Interface-Money-Management-Project Clients</title>
 
   <!-- Favicons -->
-  <link href="img/mmp.png" rel="icon">
-  <link href="img/mmp.png" rel="apple-touch-icon">
+  <link href="../img/mmp.png" rel="icon">
+  <link href="../img/mmp.png" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
-  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
-  <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css" />
+  <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text/css" href="../lib/gritter/css/jquery.gritter.css" />
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet">
-  <script src="lib/chart-master/Chart.js"></script>
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/style-responsive.css" rel="stylesheet">
+  <script src="../lib/chart-master/Chart.js"></script>
 
 </head>
 
@@ -175,7 +175,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="index.php"><img src="img/ny.jpg" class="img-circle" width="100"></a></p>
+          <p class="centered"><a href="index.php"><img src="../img/ny.jpg" class="img-circle" width="100"></a></p>
           <h5 class="centered">Olivier Sirugue</h5>
           <li class="mt">
             <a class="active" href="index.php">
@@ -322,6 +322,7 @@
                   
                  </tbody>
               </table>
+              
             </div>
           </div>
           <!-- page end-->

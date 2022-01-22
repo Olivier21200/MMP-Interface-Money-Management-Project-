@@ -11,19 +11,19 @@
   <title>MMP-Interface-Money-Management-Project Clients</title>
 
   <!-- Favicons -->
-  <link href="img/mmp.png" rel="icon">
-  <link href="img/mmp.png" rel="apple-touch-icon">
+  <link href="../img/mmp.png" rel="icon">
+  <link href="../img/mmp.png" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
-  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link href="lib/advanced-datatable/css/demo_page.css" rel="stylesheet" />
-  <link href="lib/advanced-datatable/css/demo_table.css" rel="stylesheet" />
-  <link rel="stylesheet" href="lib/advanced-datatable/css/DT_bootstrap.css" />
+  <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="../lib/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+  <link href="../lib/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../lib/advanced-datatable/css/DT_bootstrap.css" />
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/style-responsive.css" rel="stylesheet">
 
 </head>
 
@@ -174,7 +174,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="index.php"><img src="img/ny.jpg" class="img-circle" width="100"></a></p>
+          <p class="centered"><a href="index.php"><img src="../img/ny.jpg" class="img-circle" width="100"></a></p>
           <h5 class="centered">Olivier Sirugue</h5>
           <li class="mt">
             <a class="active" href="index.php">
@@ -277,7 +277,8 @@
           <div class="col-lg-9 main-chart">
         <h3 class="text-green "><i class="fa fas fa-address-book"></i> Liste des compts client :</h3>
         
-        <?php require_once("../vue-generator/clientListe.php"); ?>
+        <?php  include('../vue-generator/clientListe.php') ?>
+        
           <!-- page start-->
           
         </div>
@@ -309,25 +310,27 @@
     <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
-  <script src="lib/jquery.scrollTo.min.js"></script>
-  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
-  <script type="text/javascript" language="javascript" src="lib/advanced-datatable/js/jquery.dataTables.js"></script>
-  <script type="text/javascript" src="lib/advanced-datatable/js/DT_bootstrap.js"></script>
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" src="../lib/advanced-datatable/js/jquery.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="../lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="../lib/jquery.scrollTo.min.js"></script>
+  <script src="../lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script type="text/javascript" language="javascript" src="../lib/advanced-datatable/js/jquery.dataTables.js"></script>
+  <script type="text/javascript" src="../lib/advanced-datatable/js/DT_bootstrap.js"></script>
   <!--common script for all pages-->
-  <script src="lib/common-scripts.js"></script>
+  <script src="../lib/common-scripts.js"></script>
   <!--script for this page-->
   <script type="text/javascript">
     /* Formating function for row details */
     function fnFormatDetails(oTable, nTr) {
       var aData = oTable.fnGetData(nTr);
-      var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
+
+      var 
+      sOut = '<table cellpadding="11" cellspacing="0" border="0" style="padding-left:50px;">';
       sOut += '<tr><td>Rendering engine:</td><td>' + aData[1] + ' ' + aData[4] + '</td></tr>';
-      sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
-      sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
+      sOut += '<tr><td>Link to source:</td></tr>';
+      sOut += '<tr><td>Extra info:</td></tr>';
       sOut += '</table>';
 
       return sOut;
@@ -339,7 +342,7 @@
        */
       var nCloneTh = document.createElement('th');
       var nCloneTd = document.createElement('td');
-      nCloneTd.innerHTML = '<img src="lib/advanced-datatable/images/details_open.png">';
+      nCloneTd.innerHTML = '<img src="../lib/advanced-datatable/images/details_open.png">';
       nCloneTd.className = "center";
 
      
@@ -365,11 +368,11 @@
         var nTr = $(this).parents('tr')[0];
         if (oTable.fnIsOpen(nTr)) {
           /* This row is already open - close it */
-          this.src = "lib/advanced-datatable/media/images/details_open.png";
+          this.src = "../lib/advanced-datatable/media/images/details_open.png";
           oTable.fnClose(nTr);
         } else {
           /* Open this row */
-          this.src = "lib/advanced-datatable/images/details_close.png";
+          this.src = "../lib/advanced-datatable/images/details_close.png";
           oTable.fnOpen(nTr, fnFormatDetails(oTable, nTr), 'details');
         }
       });
